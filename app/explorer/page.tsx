@@ -84,9 +84,14 @@ export default function ExplorerPage() {
                             </p>
                         </CardContent>
                         <CardFooter>
-                            <Button variant="secondary" className="w-full" size="sm">
+                            <a
+                                href={company.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-3 bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                            >
                                 View Careers
-                            </Button>
+                            </a>
                         </CardFooter>
                     </Card>
                 ))}

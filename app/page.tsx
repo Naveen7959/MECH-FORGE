@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Compass, GitBranch, ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export default function DashboardPage() {
@@ -63,51 +62,51 @@ export default function DashboardPage() {
 
             {/* Main Action Cards */}
             <motion.div variants={item} className="grid gap-6 md:grid-cols-2">
-                <Card className="hover:border-primary/50 transition-colors cursor-pointer group relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                            <Compass className="h-5 w-5 text-primary" />
-                            Company Explorer
-                        </CardTitle>
-                        <CardDescription>
-                            Discover "Hidden Gem" startups in Aerospace & EV sectors.
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-sm text-muted-foreground mb-4">
-                            Stop applying to the same 5 MNCs. We found 12 new high-growth startups matching your profile.
-                        </p>
-                        <Button asChild className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                            <Link href="/explorer">
+                <Link href="/explorer" className="block">
+                    <Card className="hover:border-primary/50 transition-colors cursor-pointer group relative overflow-hidden h-full">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <Compass className="h-5 w-5 text-primary" />
+                                Company Explorer
+                            </CardTitle>
+                            <CardDescription>
+                                Discover "Hidden Gem" startups in Aerospace & EV sectors.
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm text-muted-foreground mb-4">
+                                Stop applying to the same 5 MNCs. We found 12 new high-growth startups matching your profile.
+                            </p>
+                            <div className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90">
                                 Explore Companies <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                        </Button>
-                    </CardContent>
-                </Card>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </Link>
 
-                <Card className="hover:border-primary/50 transition-colors cursor-pointer group relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                            <GitBranch className="h-5 w-5 text-blue-500" />
-                            Skill Roadmap
-                        </CardTitle>
-                        <CardDescription>
-                            AI-Driven curriculum adapted to real-time market shifts.
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-sm text-muted-foreground mb-4">
-                            Your "AWS" certification path is at risk. 40% of employers are shifting to Azure.
-                        </p>
-                        <Button variant="outline" asChild className="w-full group-hover:border-blue-500 group-hover:text-blue-500">
-                            <Link href="/roadmap">
+                <Link href="/roadmap" className="block">
+                    <Card className="hover:border-primary/50 transition-colors cursor-pointer group relative overflow-hidden h-full">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <GitBranch className="h-5 w-5 text-blue-500" />
+                                Skill Roadmap
+                            </CardTitle>
+                            <CardDescription>
+                                AI-Driven curriculum adapted to real-time market shifts.
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm text-muted-foreground mb-4">
+                                Your "AWS" certification path is at risk. 40% of employers are shifting to Azure.
+                            </p>
+                            <div className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground">
                                 View Logic <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                        </Button>
-                    </CardContent>
-                </Card>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </Link>
             </motion.div>
         </motion.div>
     );

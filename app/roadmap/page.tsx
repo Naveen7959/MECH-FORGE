@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Circle, Lock, AlertTriangle, TrendingUp, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { SKILLS as INITIAL_SKILLS, UPDATED_SKILLS, Skill } from "@/lib/data";
