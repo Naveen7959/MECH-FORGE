@@ -96,14 +96,16 @@ export interface Skill {
     id: string;
     name: string;
     category: "Technical" | "Soft Skill" | "Tools";
-    tier: 1 | 2 | 3; // 1 = Must Have, 2 = Good to Have, 3 = Advanced
+    tier: 1 | 2 | 3;
     description: string;
     resources: { title: string; url: string }[];
     completed: boolean;
+    trend?: "rising" | "stable" | "falling"; // H1 Feature
 }
 
+// Initial State (Before Market Shift)
 export const SKILLS: Skill[] = [
-    // Product Management (M1 Example)
+    // Product Management
     {
         id: "s1",
         name: "SQL Basics",
@@ -112,6 +114,7 @@ export const SKILLS: Skill[] = [
         description: "Fundamental for data-driven decision making.",
         resources: [{ title: "Khan Academy SQL", url: "#" }],
         completed: true,
+        trend: "stable",
     },
     {
         id: "s2",
@@ -121,35 +124,30 @@ export const SKILLS: Skill[] = [
         description: "Ability to write clear Product Requirement Documents.",
         resources: [{ title: "Atlassian PRD Template", url: "#" }],
         completed: true,
+        trend: "stable",
     },
     {
         id: "s3",
-        name: "A/B Testing",
+        name: "AWS Sol. Architect",
         category: "Technical",
         tier: 2,
-        description: "Experimentation framework for product features.",
-        resources: [{ title: "Optimizely Guide", url: "#" }],
+        description: "Designing scalable systems on Amazon Web Services.",
+        resources: [{ title: "AWS Training", url: "#" }],
         completed: false,
+        trend: "falling",
     },
     {
         id: "s4",
-        name: "Stakeholder Management",
+        name: "Stakeholder Mgmt",
         category: "Soft Skill",
         tier: 1,
         description: "Navigating complex organization structures.",
         resources: [{ title: "HBR Article", url: "#" }],
         completed: false,
+        trend: "stable",
     },
-    {
-        id: "s5",
-        name: "Roadmap Strategy",
-        category: "Technical",
-        tier: 3,
-        description: "Long-term product vision planning.",
-        resources: [{ title: "Product School", url: "#" }],
-        completed: false,
-    },
-    // Embedded Systems (S4 Example)
+
+    // Embedded Systems
     {
         id: "s6",
         name: "C/C++",
@@ -158,14 +156,31 @@ export const SKILLS: Skill[] = [
         description: "Core language for embedded programming.",
         resources: [],
         completed: true,
+        trend: "stable",
+    },
+];
+
+// Updated State (After Market Shift - H1)
+export const UPDATED_SKILLS: Skill[] = [
+    ...SKILLS.filter(s => s.id !== 's3'), // Remove AWS
+    {
+        id: "s3_updated",
+        name: "Azure DevOps",
+        category: "Technical",
+        tier: 1, // Promoted to Tier 1!
+        description: "Market Shift: Companies are migrating to Azure Ecosystems.",
+        resources: [{ title: "Microsoft Learn: Azure DevOps", url: "#" }],
+        completed: false,
+        trend: "rising", // Highlighted
     },
     {
-        id: "s7",
-        name: "RTOS",
+        id: "s3_legacy",
+        name: "AWS Sol. Architect",
         category: "Technical",
-        tier: 2,
-        description: "Real-time Operating Systems concepts.",
-        resources: [],
+        tier: 3, // Demoted to Tier 3
+        description: "Designing scalable systems on Amazon Web Services.",
+        resources: [{ title: "AWS Training", url: "#" }],
         completed: false,
+        trend: "falling",
     },
 ];
