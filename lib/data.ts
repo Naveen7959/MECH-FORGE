@@ -91,3 +91,81 @@ export const COMPANIES: Company[] = [
         logo_color: "bg-purple-500",
     },
 ];
+
+export interface Skill {
+    id: string;
+    name: string;
+    category: "Technical" | "Soft Skill" | "Tools";
+    tier: 1 | 2 | 3; // 1 = Must Have, 2 = Good to Have, 3 = Advanced
+    description: string;
+    resources: { title: string; url: string }[];
+    completed: boolean;
+}
+
+export const SKILLS: Skill[] = [
+    // Product Management (M1 Example)
+    {
+        id: "s1",
+        name: "SQL Basics",
+        category: "Technical",
+        tier: 1,
+        description: "Fundamental for data-driven decision making.",
+        resources: [{ title: "Khan Academy SQL", url: "#" }],
+        completed: true,
+    },
+    {
+        id: "s2",
+        name: "PRD Writing",
+        category: "Technical",
+        tier: 1,
+        description: "Ability to write clear Product Requirement Documents.",
+        resources: [{ title: "Atlassian PRD Template", url: "#" }],
+        completed: true,
+    },
+    {
+        id: "s3",
+        name: "A/B Testing",
+        category: "Technical",
+        tier: 2,
+        description: "Experimentation framework for product features.",
+        resources: [{ title: "Optimizely Guide", url: "#" }],
+        completed: false,
+    },
+    {
+        id: "s4",
+        name: "Stakeholder Management",
+        category: "Soft Skill",
+        tier: 1,
+        description: "Navigating complex organization structures.",
+        resources: [{ title: "HBR Article", url: "#" }],
+        completed: false,
+    },
+    {
+        id: "s5",
+        name: "Roadmap Strategy",
+        category: "Technical",
+        tier: 3,
+        description: "Long-term product vision planning.",
+        resources: [{ title: "Product School", url: "#" }],
+        completed: false,
+    },
+    // Embedded Systems (S4 Example)
+    {
+        id: "s6",
+        name: "C/C++",
+        category: "Technical",
+        tier: 1,
+        description: "Core language for embedded programming.",
+        resources: [],
+        completed: true,
+    },
+    {
+        id: "s7",
+        name: "RTOS",
+        category: "Technical",
+        tier: 2,
+        description: "Real-time Operating Systems concepts.",
+        resources: [],
+        completed: false,
+    },
+];
