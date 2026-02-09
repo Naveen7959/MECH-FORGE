@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Sidebar } from "@/components/shared/sidebar";
+import { WebGLShader } from "@/components/ui/web-gl-shader";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
                 "min-h-screen bg-background font-sans antialiased text-foreground mechanical-bg",
                 inter.variable
             )}>
+                <WebGLShader />
                 {/* Mechanical Background Decorations (Running Gears) */}
                 <div className="gear-decoration gear-1">
                     <div className="gear-inner" />

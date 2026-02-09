@@ -15,7 +15,7 @@ Write-Host "Added $nodePath to PATH for this session." -ForegroundColor Gray
 Write-Host "Installing dependencies... (This may take a minute)" -ForegroundColor Cyan
 
 # Run npm install using the command directly now that it's in PATH, or via full path
-& $npmCmd install
+& $npmCmd install --legacy-peer-deps
 if ($LASTEXITCODE -ne 0) {
     Write-Host "npm install failed with exit code $LASTEXITCODE" -ForegroundColor Red
     exit $LASTEXITCODE

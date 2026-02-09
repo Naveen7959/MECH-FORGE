@@ -11,7 +11,7 @@ export interface Company {
 }
 
 export const COMPANIES: Company[] = [
-    // ============ TRENDING MNCs ============
+    // ============ AUTOMOTIVE & EV ============
     {
         id: "c1",
         name: "Tesla",
@@ -24,6 +24,83 @@ export const COMPANIES: Company[] = [
         trending: true,
     },
     {
+        id: "c9",
+        name: "Tata Motors",
+        type: "MNC",
+        domain: "Automotive / EV",
+        description: "India's largest auto manufacturer, leading the EV revolution with Nexon EV and Punch EV.",
+        website: "https://www.tatamotors.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-700",
+        trending: true,
+    },
+    {
+        id: "cAuto1",
+        name: "Mahindra & Mahindra",
+        type: "MNC",
+        domain: "Automotive / Farm Equipment",
+        description: "Global leader in tractors and rugged SUVs. Expanding rapidly into electric mobility with the XUV lineup.",
+        website: "https://www.mahindra.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-red-700",
+        trending: true,
+    },
+    {
+        id: "cAuto2",
+        name: "Maruti Suzuki",
+        type: "MNC",
+        domain: "Automotive / Manufacturing",
+        description: "India's market leader in passenger vehicles. Focused on Lean Manufacturing and Kaizen practices.",
+        website: "https://www.marutisuzuki.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-800",
+    },
+    {
+        id: "cAuto3",
+        name: "Hyundai Motor India",
+        type: "MNC",
+        domain: "Automotive / Smart Mobility",
+        description: "Smart mobility solution provider and second largest car manufacturer in India.",
+        website: "https://www.hyundai.com/in/en/hyundai-story/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-900",
+    },
+    {
+        id: "c12",
+        name: "Ather Energy",
+        type: "Startup",
+        domain: "EV / Smart Mobility",
+        description: "Premium electric scooter maker with cutting-edge battery tech and connected features.",
+        website: "https://www.atherenergy.com/careers",
+        hidden_gem: true,
+        logo_color: "bg-green-500",
+        trending: true,
+    },
+    {
+        id: "c13",
+        name: "Ola Electric",
+        type: "Startup",
+        domain: "EV / Manufacturing",
+        description: "World's largest e-scooter factory. Building India's EV ecosystem from battery to vehicle.",
+        website: "https://olaelectric.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-green-600",
+        trending: true,
+    },
+    {
+        id: "c20",
+        name: "Rivian",
+        type: "Startup",
+        domain: "EV / Adventure Vehicles",
+        description: "Electric adventure vehicle maker. Building trucks for Amazon delivery fleet.",
+        website: "https://rivian.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-yellow-500",
+        trending: true,
+    },
+
+    // ============ AEROSPACE & DEFENSE ============
+    {
         id: "c2",
         name: "SpaceX",
         type: "MNC",
@@ -34,6 +111,60 @@ export const COMPANIES: Company[] = [
         logo_color: "bg-gray-800",
         trending: true,
     },
+    {
+        id: "cAero1",
+        name: "HAL (Hindustan Aeronautics)",
+        type: "MNC",
+        domain: "Aerospace / Defense",
+        description: "India's premier aerospace company. Designer and manufacturer of Tejas, LCH, and Dhruv.",
+        website: "https://hal-india.co.in/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-600",
+    },
+    {
+        id: "cAero2",
+        name: "DRDO",
+        type: "MNC",
+        domain: "Defense R&D",
+        description: "India's national defense research organization. Developing missile systems and combat vehicles.",
+        website: "https://www.drdo.gov.in/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-500",
+    },
+    {
+        id: "cAero3",
+        name: "Lockheed Martin",
+        type: "MNC",
+        domain: "Aerospace / Defense / Security",
+        description: "Global security and aerospace company engaged in research, design, and manufacturing of advanced systems.",
+        website: "https://www.lockheedmartin.com/en-us/careers",
+        hidden_gem: false,
+        logo_color: "bg-blue-800",
+    },
+    {
+        id: "c11",
+        name: "Skyroot Aerospace",
+        type: "Startup",
+        domain: "Space Tech / Rockets",
+        description: "First Indian private company to launch a rocket into space. Building Vikram series launchers.",
+        website: "https://skyroot.in/careers",
+        hidden_gem: true,
+        logo_color: "bg-orange-500",
+        trending: true,
+    },
+    {
+        id: "c14",
+        name: "Agnikul Cosmos",
+        type: "Startup",
+        domain: "Space Tech / 3D Printed Rockets",
+        description: "Revolutionary 3D-printed rocket engines. Making space affordable with Agnibaan launcher.",
+        website: "https://agnikul.in/careers",
+        hidden_gem: true,
+        logo_color: "bg-purple-600",
+        trending: true,
+    },
+
+    // ============ ROBOTICS & INDUSTRIAL AUTOMATION ============
     {
         id: "c3",
         name: "Siemens",
@@ -66,142 +197,15 @@ export const COMPANIES: Company[] = [
         logo_color: "bg-red-600",
     },
     {
-        id: "c6",
-        name: "NVIDIA",
-        type: "MNC",
-        domain: "AI / GPU / Autonomous Systems",
-        description: "Leading AI chip manufacturer powering autonomous vehicles, robotics, and digital twins.",
-        website: "https://www.nvidia.com/careers",
-        hidden_gem: false,
-        logo_color: "bg-green-600",
-        trending: true,
-    },
-    {
-        id: "c7",
-        name: "Honeywell Aerospace",
-        type: "MNC",
-        domain: "Aerospace / Avionics",
-        description: "Major aerospace manufacturer producing engines, avionics, and flight systems.",
-        website: "https://careers.honeywell.com",
-        hidden_gem: false,
-        logo_color: "bg-orange-600",
-    },
-    {
-        id: "c8",
-        name: "General Electric (GE)",
-        type: "MNC",
-        domain: "Aviation / Energy / Healthcare",
-        description: "Global conglomerate in aviation engines, power generation, and medical equipment.",
-        website: "https://www.ge.com/careers",
-        hidden_gem: false,
-        logo_color: "bg-blue-600",
-    },
-    {
-        id: "c9",
-        name: "Tata Motors",
-        type: "MNC",
-        domain: "Automotive / EV",
-        description: "India's largest auto manufacturer, leading the EV revolution with Nexon EV and Punch EV.",
-        website: "https://www.tatamotors.com/careers",
-        hidden_gem: false,
-        logo_color: "bg-blue-700",
-    },
-    {
-        id: "c10",
-        name: "L&T Technology Services",
-        type: "MNC",
-        domain: "Engineering R&D / Defense",
-        description: "Global engineering services company in defense, aerospace, and industrial products.",
-        website: "https://www.ltts.com/careers",
+        id: "c22",
+        name: "Boston Dynamics",
+        type: "Mid-Cap",
+        domain: "Advanced Robotics / AI",
+        description: "Creator of Spot and Atlas robots. Pushing boundaries of mobile robotics.",
+        website: "https://bostondynamics.com/careers",
         hidden_gem: false,
         logo_color: "bg-yellow-600",
-    },
-
-    // ============ TRENDING STARTUPS (Hidden Gems) ============
-    {
-        id: "c11",
-        name: "Skyroot Aerospace",
-        type: "Startup",
-        domain: "Space Tech / Rockets",
-        description: "First Indian private company to launch a rocket into space. Building Vikram series launchers.",
-        website: "https://skyroot.in/careers",
-        hidden_gem: true,
-        logo_color: "bg-orange-500",
         trending: true,
-    },
-    {
-        id: "c12",
-        name: "Ather Energy",
-        type: "Startup",
-        domain: "EV / Smart Mobility",
-        description: "Premium electric scooter maker with cutting-edge battery tech and connected features.",
-        website: "https://www.atherenergy.com/careers",
-        hidden_gem: true,
-        logo_color: "bg-green-500",
-        trending: true,
-    },
-    {
-        id: "c13",
-        name: "Ola Electric",
-        type: "Startup",
-        domain: "EV / Manufacturing",
-        description: "World's largest e-scooter factory. Building India's EV ecosystem from battery to vehicle.",
-        website: "https://olaelectric.com/careers",
-        hidden_gem: false,
-        logo_color: "bg-green-600",
-        trending: true,
-    },
-    {
-        id: "c14",
-        name: "Agnikul Cosmos",
-        type: "Startup",
-        domain: "Space Tech / 3D Printed Rockets",
-        description: "Revolutionary 3D-printed rocket engines. Making space affordable with Agnibaan launcher.",
-        website: "https://agnikul.in/careers",
-        hidden_gem: true,
-        logo_color: "bg-purple-600",
-        trending: true,
-    },
-    {
-        id: "c15",
-        name: "IdeaForge",
-        type: "Startup",
-        domain: "Drones / UAV / Defense",
-        description: "India's largest drone manufacturer for defense and enterprise. IPO listed.",
-        website: "https://ideaforgetech.com/careers",
-        hidden_gem: true,
-        logo_color: "bg-red-500",
-    },
-    {
-        id: "c16",
-        name: "GreyOrange",
-        type: "Mid-Cap",
-        domain: "Warehouse Robotics / AI",
-        description: "AI-powered fulfillment robots transforming e-commerce logistics globally.",
-        website: "https://www.greyorange.com/careers",
-        hidden_gem: true,
-        logo_color: "bg-gray-500",
-    },
-    {
-        id: "c17",
-        name: "Pixxel",
-        type: "Startup",
-        domain: "Space Tech / Earth Imaging",
-        description: "Building constellation of hyperspectral satellites for climate and agriculture monitoring.",
-        website: "https://www.pixxel.space/careers",
-        hidden_gem: true,
-        logo_color: "bg-indigo-600",
-        trending: true,
-    },
-    {
-        id: "c18",
-        name: "Euler Motors",
-        type: "Startup",
-        domain: "Commercial EV / Logistics",
-        description: "Electric cargo vehicles for last-mile delivery. Partnered with Amazon, Flipkart.",
-        website: "https://eulermotors.com/careers",
-        hidden_gem: true,
-        logo_color: "bg-blue-500",
     },
     {
         id: "c19",
@@ -214,38 +218,37 @@ export const COMPANIES: Company[] = [
         logo_color: "bg-cyan-600",
         trending: true,
     },
+
+    // ============ HEAVY ENGINEERING & ENERGY ============
     {
-        id: "c20",
-        name: "Rivian",
-        type: "Startup",
-        domain: "EV / Adventure Vehicles",
-        description: "Electric adventure vehicle maker. Building trucks for Amazon delivery fleet.",
-        website: "https://rivian.com/careers",
+        id: "cHeavy1",
+        name: "L&T (Larsen & Toubro)",
+        type: "MNC",
+        domain: "Construction / Defense / Heavy Eng",
+        description: "Global conglomerate in construction, power, defense, and heavy engineering projects.",
+        website: "https://www.larsentoubro.com/careers",
+        hidden_gem: false,
+        logo_color: "bg-yellow-700",
+    },
+    {
+        id: "cHeavy2",
+        name: "Caterpillar Inc.",
+        type: "MNC",
+        domain: "Heavy Equipment / Energy",
+        description: "World's leading manufacturer of construction and mining equipment, diesel and natural gas engines.",
+        website: "https://www.caterpillar.com/careers",
         hidden_gem: false,
         logo_color: "bg-yellow-500",
-        trending: true,
     },
     {
-        id: "c21",
-        name: "Relativity Space",
-        type: "Startup",
-        domain: "Space Tech / 3D Printing",
-        description: "3D-printing entire rockets. Terran R is the world's first fully 3D-printed rocket.",
-        website: "https://www.relativityspace.com/careers",
-        hidden_gem: true,
-        logo_color: "bg-slate-600",
-        trending: true,
-    },
-    {
-        id: "c22",
-        name: "Boston Dynamics",
-        type: "Mid-Cap",
-        domain: "Advanced Robotics / AI",
-        description: "Creator of Spot and Atlas robots. Pushing boundaries of mobile robotics.",
-        website: "https://bostondynamics.com/careers",
+        id: "cHeavy3",
+        name: "Reliance Engineering",
+        type: "MNC",
+        domain: "Energy / Refining / Infrastructure",
+        description: "Core engineering division of Reliance, managing world-scale refineries and manufacturing plants.",
+        website: "https://www.ril.com/careers",
         hidden_gem: false,
-        logo_color: "bg-yellow-600",
-        trending: true,
+        logo_color: "bg-blue-800",
     },
 ];
 
@@ -463,9 +466,14 @@ export const COMPANY_REQUIREMENTS: CompanyRequirement[] = [
         preferredSkills: ["ROS (Robot OS)", "Python for Engineering", "AutoCAD"],
     },
     {
-        companyId: "c6", // NVIDIA
-        requiredSkills: ["Python for Engineering", "C/C++ Embedded", "ROS (Robot OS)"],
-        preferredSkills: ["MATLAB / Simulink", "Azure Digital Twins", "Technical Communication"],
+        companyId: "c5", // ABB Robotics
+        requiredSkills: ["ROS (Robot OS)", "SolidWorks", "C/C++ Embedded"],
+        preferredSkills: ["Python for Engineering", "AutoCAD", "Project Management"],
+    },
+    {
+        companyId: "c9", // Tata Motors
+        requiredSkills: ["SolidWorks", "AutoCAD", "Python for Engineering"],
+        preferredSkills: ["MATLAB / Simulink", "ANSYS / FEA", "Technical Communication"],
     },
     {
         companyId: "c11", // Skyroot Aerospace
@@ -478,6 +486,11 @@ export const COMPANY_REQUIREMENTS: CompanyRequirement[] = [
         preferredSkills: ["ANSYS / FEA", "C/C++ Embedded", "Project Management"],
     },
     {
+        companyId: "c13", // Ola Electric
+        requiredSkills: ["SolidWorks", "C/C++ Embedded", "MATLAB / Simulink"],
+        preferredSkills: ["Python for Engineering", "AutoCAD", "Technical Communication"],
+    },
+    {
         companyId: "c14", // Agnikul Cosmos
         requiredSkills: ["SolidWorks", "ANSYS / FEA", "Python for Engineering"],
         preferredSkills: ["MATLAB / Simulink", "AutoCAD", "Technical Communication"],
@@ -488,9 +501,60 @@ export const COMPANY_REQUIREMENTS: CompanyRequirement[] = [
         preferredSkills: ["SolidWorks", "MATLAB / Simulink", "Azure Digital Twins"],
     },
     {
+        companyId: "c20", // Rivian
+        requiredSkills: ["SolidWorks", "Python for Engineering", "ANSYS / FEA"],
+        preferredSkills: ["C/C++ Embedded", "MATLAB / Simulink", "Technical Communication"],
+    },
+    {
         companyId: "c22", // Boston Dynamics
         requiredSkills: ["ROS (Robot OS)", "C/C++ Embedded", "Python for Engineering"],
         preferredSkills: ["MATLAB / Simulink", "SolidWorks", "Technical Communication"],
     },
+    {
+        companyId: "cAuto1", // Mahindra
+        requiredSkills: ["SolidWorks", "AutoCAD", "ANSYS / FEA"],
+        preferredSkills: ["MATLAB / Simulink", "Python for Engineering", "Project Management"],
+    },
+    {
+        companyId: "cAuto2", // Maruti Suzuki
+        requiredSkills: ["SolidWorks", "AutoCAD", "Project Management"],
+        preferredSkills: ["Python for Engineering", "ANSYS / FEA", "Technical Communication"],
+    },
+    {
+        companyId: "cAuto3", // Hyundai
+        requiredSkills: ["SolidWorks", "AutoCAD", "C/C++ Embedded"],
+        preferredSkills: ["MATLAB / Simulink", "Python for Engineering", "ANSYS / FEA"],
+    },
+    {
+        companyId: "cAero1", // HAL
+        requiredSkills: ["SolidWorks", "ANSYS / FEA", "AutoCAD"],
+        preferredSkills: ["MATLAB / Simulink", "Technical Communication", "C/C++ Embedded"],
+    },
+    {
+        companyId: "cAero2", // DRDO
+        requiredSkills: ["ANSYS / FEA", "SolidWorks", "C/C++ Embedded"],
+        preferredSkills: ["Python for Engineering", "MATLAB / Simulink", "Technical Communication"],
+    },
+    {
+        companyId: "cAero3", // Lockheed Martin
+        requiredSkills: ["SolidWorks", "ANSYS / FEA", "Python for Engineering"],
+        preferredSkills: ["C/C++ Embedded", "Project Management", "Technical Communication"],
+    },
+    {
+        companyId: "cHeavy1", // L&T
+        requiredSkills: ["SolidWorks", "AutoCAD", "Project Management"],
+        preferredSkills: ["ANSYS / FEA", "Python for Engineering", "Technical Communication"],
+    },
+    {
+        companyId: "cHeavy2", // Caterpillar
+        requiredSkills: ["SolidWorks", "ANSYS / FEA", "MATLAB / Simulink"],
+        preferredSkills: ["AutoCAD", "Python for Engineering", "Project Management"],
+    },
+    {
+        companyId: "cHeavy3", // Reliance Engineering
+        requiredSkills: ["SolidWorks", "AutoCAD", "Project Management"],
+        preferredSkills: ["ANSYS / FEA", "Python for Engineering", "Technical Communication"],
+    },
 ];
+
 

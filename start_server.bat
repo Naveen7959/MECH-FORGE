@@ -16,7 +16,7 @@ echo Using Node at: %NODE_EXE%
 echo Added Node.js to PATH for this session.
 
 echo Installing dependencies...
-call "%NPM_CMD%" install
+call "%NPM_CMD%" install --legacy-peer-deps
 
 if %ERRORLEVEL% NEQ 0 (
     echo npm install failed.
